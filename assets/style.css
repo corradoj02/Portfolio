@@ -1,0 +1,8 @@
+/* style sheet */
+
+/* imports the Noto Sans Display font from google fonts to use within the style sheet */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&display=swap');
+
+* {
+    font-family: 'Noto Sans Display', sans-serif;
+}
