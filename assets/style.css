@@ -70,6 +70,34 @@ h1 {
     font-size: 2rem;
 }
 
+h2{
+    color: var(--teal);
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+/* aligns items in the container holding the about me information */
+.about {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem;
+    align-items: center;
+}
+
+/* creates a divider between content and  */
+.separator {
+    border-left: .4rem solid var(--teal);
+    border-radius: 1rem;
+    height: 11rem;
+    margin: 2rem;
+}
+
+#about {
+    line-height: 1.5rem;
+}
+
+
 .bkgr {
     background-image: url(./waves.jpg);
     background-position: center;
