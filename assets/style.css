@@ -1,4 +1,11 @@
 /* style sheet */
+:root {
+    --navy: #284B63;
+    --charcoal: #353535;
+    --white: #FFFFFF;
+    --smoke: #D9D9D9;
+    --teal: #3C6E71;
+}
 
 /* imports the Noto Sans Display font from google fonts to use within the style sheet */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@500&display=swap');
@@ -11,7 +18,7 @@
 
 /* sets base styles for header element */
 header {
-    background: darkgray;
+    background: var(--navy);
     display: flex;
     padding: 1rem;
     flex-direction: row;
@@ -22,7 +29,7 @@ header {
 
 /* sets base styles for the elements within navbar like the links */
 nav {
-    color: darkgray;
+    color: var(--navy);
     display: flex;
 }
 
@@ -32,19 +39,34 @@ ul {
     justify-content: space-evenly;
 }
 
-/* gives the links in the navbar a cyan underline and determines space between each other */
+/* gives the links in the navbar a white underline and determines space between each other */
 nav a {
-    text-decoration-style: underline;
-    text-decoration-color: cyan;
+    text-decoration: none;
+    text-decoration-color: var(--white);
     margin: .5rem;
 }
+/* adds animation to links in navbar */
+.nav-link {
+    transition: all 150ms ease-in-out;
+}
+/* sets animation to scale and underline link on hover */
+.nav-link:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+}
+
+/* removes color changing of links after clicking */
+a, a:visited, a:hover, a:active {
+    color: var(--white) !important;
+  }
 
 /* changes the title on the navbar */
 h1 {
     border-radius:15px;
     padding: .5rem;
-    color:darkgray;
-    background: cyan;
+    color:var(--white);
+    background: var(--charcoal);
     font-size: 2rem;
 }
 
