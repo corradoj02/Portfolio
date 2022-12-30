@@ -45,10 +45,12 @@ nav a {
     text-decoration-color: var(--white);
     margin: .5rem;
 }
+
 /* adds animation to links in navbar */
 .nav-link {
     transition: all 150ms ease-in-out;
 }
+
 /* sets animation to scale and underline link on hover */
 .nav-link:hover {
     transform: scale(1.1);
@@ -57,7 +59,7 @@ nav a {
 }
 
 /* removes color changing of links after clicking */
-a, a:visited, a:hover, a:active {
+nav a, nav a:visited, nav a:hover, nav a:active {
     color: var(--white) !important;
   }
 
@@ -70,10 +72,12 @@ h1 {
     font-size: 2rem;
 }
 
+/* sets style for the title in each section */
 h2{
     color: var(--teal);
     font-size: 2.5rem;
     margin: 1rem;
+    text-align: end;
 }
 
 /* aligns items in the container holding the about me information */
@@ -82,22 +86,48 @@ h2{
     flex-direction: row;
     justify-content: space-around;
     padding: 3rem;
-    align-items: center;
+    align-items: top;
 }
 
-/* creates a divider between content and  */
-.separator {
-    border-left: .4rem solid var(--teal);
-    border-radius: 1rem;
-    height: 11rem;
-    margin: 2rem;
-}
-
+/* sets line height spacing for about me paragraph */
 #about {
+    padding-top:1rem;
     line-height: 1.5rem;
 }
 
+/* aligns items in the container holding previous work */
+.work {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 2rem;
+    align-items: top;
+}
 
+/* sets positioning of title and separator */
+#work-title {
+    padding: 2rem;
+    margin-right: -1rem;
+    text-align: end;
+}
+
+/* aligns items in the container holding contact information */
+.contact {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 2rem;
+    align-items: top;
+    padding-left: .8rem;
+}
+
+.contact-link a {
+    color: var(--teal);
+    
+
+}
+
+/* background image for under the header */
 .bkgr {
     background-image: url(./waves.jpg);
     background-position: center;
@@ -105,22 +135,72 @@ h2{
     height: 6rem;
 }
 
-/* Puts header and navbar items into a stacked column when on a smaller screen */
-@media screen and (max-width:591px) {
+@media screen and (min-width: 619px){
+
+    /* creates a content and title divider vertically */
+    .separator {
+        border-left: .4rem solid var(--teal);
+        border-radius: 1rem;
+        height: 15rem;
+        margin: 2rem;
+        padding:0;
+        top:-1rem;
+        position:relative;
+        
+    }
+}
+
+/* sets styles for smaller screen sizing */
+@media screen and (max-width:618px) {
+
+        /* moves header elements/items to the center as a column */
         header {
             display:flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
+
+        /* adjusts navbar font size and spacing */
         nav {
             margin: 1rem;
             font-size: 1.5rem;
             line-height: 2rem;
         }
+
+        /* moves navbar items into a column */
         nav ul {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+        }
+
+        /* changes the content divider to horizontal when on a smaller screen */
+        .separator{
+            border-top: .4rem solid var(--teal);
+            width: 15rem;
+            border-radius: 1rem;
+            margin: 2rem;
+        }
+
+        /* changes content layout to a column for smaller screens */
+        .about {
+            padding:1rem;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* changes content layout to a column for smaller screens */
+        .work {
+            padding:1rem;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        /* changes content layout to a column for smaller screens */
+        .contact {
+            padding:1rem;
+            flex-direction: column;
+            align-items: center;
         }
 }
