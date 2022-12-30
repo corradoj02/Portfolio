@@ -111,6 +111,15 @@ h2{
     text-align: end;
 }
 
+.work-1 {
+    background-image: url(./snippet.jpg);
+    background-repeat: no-repeat;
+    background-size: 50rem;
+    width: 50rem;
+    height: 20rem;
+    
+}
+
 /* aligns items in the container holding contact information */
 .contact {
     display:flex;
