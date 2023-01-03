@@ -80,6 +80,19 @@ h2{
     text-align: end;
 }
 
+/* sets base styles for captions on work example images */
+h3 {
+    width: 51rem;
+    margin: 1rem;
+    padding: 1rem;
+    color: var(--white);
+    background-color: var(--navy);
+    border: .5rem solid var(--teal);
+    position: relative;
+    top: 12.2rem;
+    left: -.9rem;
+}
+
 /* aligns items in the container holding the about me information */
 .about {
     display:flex;
@@ -92,7 +105,10 @@ h2{
 /* sets line height spacing for about me paragraph */
 #about {
     padding-top:1rem;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
+    display:  flex;
+    align-items: top;
+    justify-content: center;
 }
 
 /* aligns items in the container holding previous work */
@@ -111,13 +127,64 @@ h2{
     text-align: end;
 }
 
-.work-1 {
-    background-image: url(./snippet.jpg);
+/* removes the underline on the caption inside work images */
+.work a {
+    text-decoration: none;
+}
+
+/* sets the image properties to the example image of work */
+a div {
     background-repeat: no-repeat;
     background-size: 50rem;
     width: 50rem;
     height: 20rem;
-    
+    opacity: 50%;
+    transition: all 1s ease-in-out;
+}
+
+/* opacity animation on hover */
+a div:hover {
+    opacity: 100%;
+}
+
+/* sets background image of prework study guide project */
+.work1 {
+    background-image: url(./study-guide.jpg);
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+/* sets background image of code snippet project */
+.work2 {
+    background-image: url(./snippet.jpg);
+    margin: 0;
+}
+
+/* set the position of the caption on the example image */
+#work-2 {
+    position: absolute;
+    align-items: center;
+    top: 77rem;
+    left: 17.6rem;
+    width: 50rem;
+    height: -2rem;
+    margin: 0;
+}
+
+/* sets the work example border */
+.work a div {
+    border: .5rem solid rgba(217, 217, 217, 1);
+    padding: 0;
+    margin-left: 1rem;
+}
+
+/* set the position of the caption on the example image */
+a h3 {
+        position: absolute;
+        top: 53rem;
+        left: 16.8rem;
+        width: 49.8rem;
 }
 
 /* aligns items in the container holding contact information */
@@ -289,5 +356,27 @@ h2{
             right: 5rem;
             bottom: 5rem;
             line-height: 2.5rem;
+        }
+        .work {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .work2 {
+            background-size: 15rem;
+            width: 15rem;
+            height: 5rem;
+            align-self: center ;
+        }
+
+        /* set the position of the caption on the example image */
+        #work-2 {
+            position: relative;
+            align-items: center;
+            top: 0rem;
+            left: 0rem;
+            width: 15rem;
+            height: -2rem;
+            margin: 0;
         }
 }
