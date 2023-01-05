@@ -147,7 +147,7 @@ a div:hover {
     opacity: 100%;
 }
 
-/* sets background image of prework study guide project */
+/* sets background image of Prework Study Guide project */
 .work1 {
     background-image: url(./study-guide.jpg);
     margin-bottom: 3rem;
@@ -155,18 +155,29 @@ a div:hover {
     margin-right: 5rem;
 }
 
-/* sets background image of code snippet project */
+/* sets the position of the caption on Prework Study Guide image */
+#work-1 {
+    position: relative;
+    align-items: center;
+    top: -7rem;
+    left: 1rem;
+    width: 50rem;
+    height: -2rem;
+    margin: 0;
+}
+
+/* sets background image of CSS Code Snippet project */
 .work2 {
     background-image: url(./snippet.jpg);
     margin: 0;
 }
 
-/* set the position of the caption on the example image */
+/* set the position of the caption on the CSS Code Snippet image */
 #work-2 {
-    position: absolute;
+    position: relative;
     align-items: center;
-    top: 77rem;
-    left: 17.6rem;
+    top: -4rem;
+    left: 1rem;
     width: 50rem;
     height: -2rem;
     margin: 0;
@@ -282,6 +293,7 @@ a h3 {
            -o-transform: translateY(-15px);
         }
     }
+
     /* other browsers */
     @keyframes bounce {
         0%,  
@@ -339,14 +351,52 @@ a h3 {
             padding:1rem;
             flex-direction: column;
             align-items: center;
+            display: flex;
+            justify-content: center;
         }
-        
+
+        /* sets position and size of Prework Study Guide image */
+        .work1 {
+            position: relative;
+            left: 2.2rem;
+            width: 35rem;
+            background-size: 35rem;
+        }
+
+        /* sets position of the caption on Prework Study Guide image */
+        #work-1 {
+            position:relative;
+            top: -7rem;
+            left: 3.2rem;
+            width: 35rem;
+        }
+
+        /* sets position and size of CSS Code Snippet Cheatsheat image */
+        .work2 {
+            position: relative;
+            left: 2.2rem;
+            width: 35rem;
+            height: 15rem;
+            background-size: 34rem;
+        }
+
+        /* set the position of the caption on the CSS Code Snippet Cheatsheat image */
+        #work-2 {
+            position: relative;
+            top: -3rem;
+            left: 3.2rem;
+            width: 35rem;
+            height: -2rem;
+            margin: 0;
+        }
+
         /* changes content layout to a column for smaller screens */
         .contact {
             padding:1rem;
             flex-direction: column;
             align-items: center;
         }
+
         /* puts contact links into a column and centers them on smaller screens */
         .contact-link {
             flex-direction: column;
@@ -357,26 +407,5 @@ a h3 {
             bottom: 5rem;
             line-height: 2.5rem;
         }
-        .work {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .work2 {
-            background-size: 15rem;
-            width: 15rem;
-            height: 5rem;
-            align-self: center ;
-        }
 
-        /* set the position of the caption on the example image */
-        #work-2 {
-            position: relative;
-            align-items: center;
-            top: 0rem;
-            left: 0rem;
-            width: 15rem;
-            height: -2rem;
-            margin: 0;
-        }
 }
