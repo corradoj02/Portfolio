@@ -150,37 +150,31 @@ a div:hover {
 /* sets background image of Prework Study Guide project */
 .work1 {
     background-image: url(./study-guide.jpg);
-    margin-bottom: 3rem;
     margin-left: 5rem;
     margin-right: 5rem;
 }
 
-/* sets the position of the caption on Prework Study Guide image */
-#work-1 {
+/* affects the captions on the work images */
+.work h3 {
     position: relative;
-    align-items: center;
-    top: -7rem;
-    left: 1rem;
+    top: -4rem;
+    left:1rem;
     width: 50rem;
-    height: -2rem;
     margin: 0;
 }
 
 /* sets background image of CSS Code Snippet project */
 .work2 {
     background-image: url(./snippet.jpg);
-    margin: 0;
 }
 
-/* set the position of the caption on the CSS Code Snippet image */
-#work-2 {
-    position: relative;
-    align-items: center;
-    top: -4rem;
-    left: 1rem;
-    width: 50rem;
-    height: -2rem;
-    margin: 0;
+/* sets background image for the first placeholder */
+.placeholder1 {
+    background-image: url(./alvaro-reyes-qWwpHwip31M-unsplash.jpg);
+}
+
+.placeholder2 {
+    background-image: url(./brands-people-Ax8IA8GAjVg-unsplash.jpg);
 }
 
 /* sets the work example border */
@@ -188,14 +182,6 @@ a div:hover {
     border: .5rem solid rgba(217, 217, 217, 1);
     padding: 0;
     margin-left: 1rem;
-}
-
-/* set the position of the caption on the example image */
-a h3 {
-        position: absolute;
-        top: 53rem;
-        left: 16.8rem;
-        width: 49.8rem;
 }
 
 /* aligns items in the container holding contact information */
@@ -346,6 +332,13 @@ a h3 {
             align-items: center;
         }
 
+        /* sets position of work contents for smaller screens*/
+        a div {
+            position: relative;
+            left: 2.2rem;
+            width: 35rem;
+        }
+
         /* changes content layout to a column for smaller screens */
         .work {
             padding:1rem;
@@ -355,39 +348,11 @@ a h3 {
             justify-content: center;
         }
 
-        /* sets position and size of Prework Study Guide image */
-        .work1 {
+        /* sets positioning for captions on work images for smaller screens */
+        .work h3 {
             position: relative;
-            left: 2.2rem;
-            width: 35rem;
-            background-size: 35rem;
-        }
-
-        /* sets position of the caption on Prework Study Guide image */
-        #work-1 {
-            position:relative;
-            top: -7rem;
             left: 3.2rem;
             width: 35rem;
-        }
-
-        /* sets position and size of CSS Code Snippet Cheatsheat image */
-        .work2 {
-            position: relative;
-            left: 2.2rem;
-            width: 35rem;
-            height: 15rem;
-            background-size: 34rem;
-        }
-
-        /* set the position of the caption on the CSS Code Snippet Cheatsheat image */
-        #work-2 {
-            position: relative;
-            top: -3rem;
-            left: 3.2rem;
-            width: 35rem;
-            height: -2rem;
-            margin: 0;
         }
 
         /* changes content layout to a column for smaller screens */
