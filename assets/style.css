@@ -1,4 +1,4 @@
-/* style sheet */
+/* Creates color variables to use repeatedly within this style sheet */
 :root {
     --navy: #284B63;
     --charcoal: #353535;
@@ -93,6 +93,15 @@ h3 {
     left: -.9rem;
 }
 
+
+span {
+    position: relative;
+    font-size: 3rem;
+    line-height: 4rem;
+    color: var(--teal);
+    width: 4rem;
+}
+
 /* aligns items in the container holding the about me information */
 .about {
     display:flex;
@@ -106,7 +115,6 @@ h3 {
 #about {
     padding-top:1rem;
     line-height: 1.8rem;
-    display:  flex;
     align-items: top;
     justify-content: center;
 }
