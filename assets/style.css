@@ -218,6 +218,7 @@ a div:hover {
 .bkgr {
     background-image: url(./waves.jpg);
     background-position: center;
+    background-size:150rem;
     width:auto;
     height: 6rem;
 }
