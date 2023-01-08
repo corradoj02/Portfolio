@@ -93,7 +93,7 @@ h3 {
     left: -.9rem;
 }
 
-
+/* changes the positioning and color of the first bit of text in the about me */
 span {
     position: relative;
     font-size: 3rem;
@@ -123,8 +123,8 @@ span {
 .work {
     display:flex;
     flex-direction: row;
-    justify-content: flex-start;
-    padding: 2rem;
+    justify-content:flex-start;
+    padding:2rem;
     align-items: top;
 }
 
@@ -135,6 +135,12 @@ span {
     text-align: end;
 }
 
+/* positions content within the work-group section */
+.work-group {
+    padding-bottom: 3rem;
+    display:flex;
+    flex-wrap: wrap;
+}
 /* removes the underline on the caption inside work images */
 .work a {
     text-decoration: none;
@@ -144,7 +150,7 @@ span {
 a div {
     background-repeat: no-repeat;
     background-size: 50rem;
-    width: 50rem;
+    width: 30rem;
     height: 20rem;
     opacity: 50%;
     transition: all 1s ease-in-out;
@@ -158,8 +164,16 @@ a div:hover {
 /* sets background image of Prework Study Guide project */
 .work1 {
     background-image: url(./study-guide.jpg);
-    margin-left: 5rem;
-    margin-right: 5rem;
+    background-size: 75rem;
+    width: 65rem;
+    height:35rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Changes only the caption width for the first project */
+#work-1 {
+    width:65rem;
 }
 
 /* affects the captions on the work images */
@@ -167,7 +181,7 @@ a div:hover {
     position: relative;
     top: -4rem;
     left:1rem;
-    width: 50rem;
+    width: 30rem;
     margin: 0;
 }
 
@@ -181,6 +195,7 @@ a div:hover {
     background-image: url(./alvaro-reyes-qWwpHwip31M-unsplash.jpg);
 }
 
+/* sets background image for the second placeholder */
 .placeholder2 {
     background-image: url(./brands-people-Ax8IA8GAjVg-unsplash.jpg);
 }
@@ -362,6 +377,19 @@ a div:hover {
             position: relative;
             left: 3.2rem;
             width: 35rem;
+        }
+
+        /* adjusts size of first project to fit smaller screens */
+        .work1 {
+            background-size:55rem;
+            width:35rem;
+            height: 25rem;
+
+        }
+
+        /* adjusts size of first project caption to fit smaller screens */
+        #work-1{
+            width:35rem;
         }
 
         /* changes content layout to a column for smaller screens */
