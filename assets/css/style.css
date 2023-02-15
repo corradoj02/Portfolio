@@ -190,14 +190,14 @@ a div:hover {
     background-image: url(../images/snippet.jpg);
 }
 
-/* sets background image for the first placeholder */
+/* sets background image for the Weather app*/
 .work3 {
-    background-image: url(../images/mood-movie.png);
+    background-image: url(../images/weather-app.png);
 }
 
-/* sets background image for the second placeholder */
-.placeholder2 {
-    background-image: url(../images/brands-people-Ax8IA8GAjVg-unsplash.jpg);
+/* sets background image for Mood Movie project*/
+.work4 {
+    background-image: url(../images/mood-movie.png);
 }
 
 /* sets the work example border */
