@@ -163,7 +163,7 @@ a div:hover {
 
 /* sets background image of Prework Study Guide project */
 .work1 {
-    background-image: url(./study-guide.jpg);
+    background-image: url(../images/study-guide.jpg);
     background-size: 75rem;
     width: 65rem;
     height:35rem;
@@ -187,17 +187,17 @@ a div:hover {
 
 /* sets background image of CSS Code Snippet project */
 .work2 {
-    background-image: url(./snippet.jpg);
+    background-image: url(../images/snippet.jpg);
 }
 
 /* sets background image for the first placeholder */
 .work3 {
-    background-image: url(./images/mood-movie.png);
+    background-image: url(../images/mood-movie.png);
 }
 
 /* sets background image for the second placeholder */
 .placeholder2 {
-    background-image: url(./brands-people-Ax8IA8GAjVg-unsplash.jpg);
+    background-image: url(../images/brands-people-Ax8IA8GAjVg-unsplash.jpg);
 }
 
 /* sets the work example border */
@@ -231,7 +231,7 @@ a div:hover {
 
 /* background image for under the header */
 .bkgr {
-    background-image: url(./waves.jpg);
+    background-image: url(../images/waves.jpg);
     background-position: center;
     background-size:150rem;
     width:auto;

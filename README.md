@@ -24,21 +24,21 @@ Use this webpage as a portfolio to learn more about myself, see past, present, a
 
 The top of the page includes my name and a navbar with links to different sections within the page: 
 
-<img src="./assets/heading.png">
+<img src="./assets/images/heading.png">
 
 <br>
 
 The following section includes the about me, works, and contact method links:
 
-<img src="./assets/about.png">
-<img src="./assets/works.png">
-<img src="./assets/contacts.png">
+<img src="./assets/images/about.png">
+<img src="./assets/images/works.png">
+<img src="./assets/images/contacts.png">
 
 <br>
 
 I also made sure that the page scales for smaller screen options:
 
-<img src="./assets/scaled.png">
+<img src="./assets/images/scaled.png">
 
 
 
